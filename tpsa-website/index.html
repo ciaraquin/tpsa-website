@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>TPSA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 900, function () {
+            window.location.hash = hash;
+          });
+        }
+      });
+    })
+  </script>
+  <style>
+    .navbar {
+      margin-bottom: 0;
+      background: linear-gradient(rgb(68, 89, 166), rgba(73, 91, 159, 0.402));
+      /* background-color: #445aa6; */
+      z-index: 9999;
+      border: 0;
+      border-radius: 0;
+    }
+
+    .navbar li a,
+    .navbar .navbar-brand {
+      color: #fff !important;
+    }
+
+    .navbar-nav li a:hover,
+    .navbar-nav li.active a {
+      color: #445aa6 !important;
+      background-color: #fff !important;
+    }
+
+    .blue-text {
+      color: #445aa6;
+    }
+
+    .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+    }
+
+    .jumbotron {
+      /* background-color: #445aa6; */
+      background: linear-gradient(rgb(68, 89, 166), rgb(106, 152, 185));
+      /* background-image: url('https://media.istockphoto.com/id/1283436312/photo/stars-in-the-night-sky.webp?b=1&s=170667a&w=0&k=20&c=YnbbNZRFWd-dJjrBKs2NQs5mOreALDb-Q3kN321MkXQ='); */
+      color: #ffffff;
+      padding: 75px 25px;
+    }
+
+    .glyphicon {
+      font-size: 16px;
+      margin-bottom: 16px;
+      color: #445aa6;
+    }
+
+    .carousel-control.right,
+    .carousel-control.left {
+      background-image: none;
+      color: #445aa6;
+    }
+
+    .carousel-indicators li {
+      border-color: #445aa6;
+    }
+
+    .carousel-indicators li.active {
+      background-color: #445aa6;
+    }
+
+    .item h5 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+    }
+
+    .item span {
+      font-style: normal;
+    }
+  </style>
+
+</head>
+
+<body id="top" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo.jpg" width="30" height="30"> 
+        </a>
+        <!-- <a class="navbar-brand" href="img/logo.jpg">TPSA</a> -->
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#projects">CURRENT PROJECTS</a></li>
+          <li><a href="#opps">OPPORTUNITIES</a></li>
+          <li><a href="#committee">COMMITTEE</a></li>
+        </ul>
+      </div>
+  </nav>
+  </div>
+
+  <div class="jumbotron text-center">
+    <h1>THEORETICAL PHYSICS STUDENT ASSOCIATION OF IRELAND</h1>
+    <p>Welcome to Ireland's entirely student-run community of Theoretical Physics students and enthusiasts.</p>
+    <img src="img/logo.jpg" width=50 height=50>
+  </div>
+  <br>
+  
+  <!-- HOME -->
+  
+  <div id='home' class='container text-center'><br><br><br><br>
+    
+    <img class="img-rounded" src="https://pbs.twimg.com/media/Fvszj6rWAAUpdv1?format=jpg&name=large" width=500
+      height=400 align=right>
+    <h3 class="black-text ">Vision</h3>
+    <br>
+    <p><b>Knowledge shared is knowledge squared</b><br>
+    <p>Our goal is to cultivate the interest students have in maths and physics, among other topics, into a
+      lifelongpassion for learning about and bettering our understanding of the world we live in. From weekly seminars
+      to talksgiven by experts in the subject, young minds are inspired and motivated to pursue a stimulating and
+      rewardingcareer in a field they love. A love found, nourished and shared at TPSA.</p>
+  </div>
+  
+  <div id='home' class='container text-center'>
+    <img class="img-rounded" src="img/tpsaImg4.webp" width=400 height=350 align=left><br><br>
+    
+    <h3 class="black-text ">      History</h3><br>
+    <p>TPSA was founded by Michael Mitchell along with a number of other students in 2019.<br>
+      While studying Theoretical Physics in TCD, these high-fliers felt there was a gap in<br>
+      their overall development as up and coming professionals. They created a space where<br>
+      students could work together, cultivating their social, problem solving and explanatory
+      skills.<br><br>They also felt they could lend a hand in putting Ireland, on the map of physics excellence. </p>
+  </div>
+
+  <div id='home' class='container text-center'><br><br>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.0064310235216!2d-6.253234522661795!3d53.34314107496249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e90ff2c9f6d%3A0x4d8738ad2983146b!2sHamilton%20Building!5e0!3m2!1sen!2sie!4v1708114767985!5m2!1sen!2sie" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" align=right></iframe>
+    <h3 class="black-text ">Weekly Seminars</h3><br>
+    
+    <p>We hold seminars every Tuesday evening from 6pm-8pm in the Synge and the Salmon, <a
+        href="https://maps.app.goo.gl/Nt4xTmMxbq4FbdCJ8">Hamilton Building, TCD</a>. <br>The aim here is give
+      like-minded students the opportunity to learn to problem solve together, to receive answers to their questions and
+      to build lasting friendships. Everyone is welcome, you don't have to be a TP student!</p>
+  </div>
+  <div id='home' class='container text-center'><br><br>
+    <img class="img-rounded" src="https://pbs.twimg.com/media/FwQjYw5agAcy0vV.jpg" width=400 height=250 align=left>
+    <h3 class="black-text ">Outreach</h3><br>
+    <p>Bringing our love for maths and physics to younger students, as well as those outside the field, in an attempt
+      to<br>inspire, motivate and excite has always been a priority at TPSA. We believe in the importance of
+      leadership<br>and in our responsibility to guide future generations of Ireland so that they can discover the right
+      path for them,<br>whether that be in STEM or elsewhere.</p>
+  </div>
+  <br><br>
+  <hr><br>
+
+  <!-- CURRENT PROJECTS -->
+  <div id='projects' class='text-center'><br><br>
+    <h2>Current Projects</h2>
+    <p>A little on what we've been up to recently</p>
+  </div>
+
+  <div id='projects' class='container text-center'>
+    <br><br>
+    <img class="img-rounded" src="img/tpsaImg1.webp" width=500 height=400 align=right><br><br><br><br>
+    <h3 class="black-text ">Outreach</h3>
+    <p>Our recent outreach events include a painting and particle physics seminar during<br>
+      Trinity Arts Festival, a careers fair collaboration with Mathsoc and Physoc, and a<br>
+      lecture given to some of the students of CTYI. We are hoping to take part in Mathsfest<br>
+      this month and have many more plans for the upcoming year. </p>
+    <br><br><br>
+  </div>
+  <div id='projects' class='container text-center'>
+    <br><br>
+    <img class="img-rounded" src="img/tpsaImg2.webp" width=500 height=400 align=left><br><br><br><br>
+    <h3 class="black-text ">Our hand in Ireland's efforts to join CERN</h3>
+    <p>Unfortunately, for many years Ireland has been one of the very few European countries to<br>
+      withhold from joining the European Organisation for Nuclear Research. We have been quite<br>
+      heavily involved in Ireland's most recent move towards membership by meeting with several<br>
+      members of the Oireachtas as well as organising an informational event in collaboration with<br>
+      the Provost of TCD. We are very hopeful that more action is to follow.</p>
+    <br><br><br>
+  </div>
+  <div id='projects' class='container text-center'>
+    <br><br>
+    <img class="img-rounded" src="img/tpsaImg3.webp" width=500 height=400 align=right><br><br><br><br>
+    <h3>PLANCKS</h3>
+    <p>The Physics League Across Numerous Countries for Kick-ass Students (yes, that's really what<br>
+      it's called), is a three-day exam-based physics competition between colleges from all overthe<br>
+      world. We sent our first team of three students to the preliminaries in Liverpool in February<br>
+      of this year. They did us very proud by placing 15th out of 56 teams while being the highest<br>
+      placed Irish team. If you are interested in taking part in the 2024 competition, the main event<br>
+      of which will be held in Dublin, please don't hesitate to get in touch.</p>
+  </div>
+
+  <div id='projects' class='container text-center'>
+    <br><br><br><br>
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/xg9C5oG9ykg?si=qrdc2Yj-2SoeG4Z1"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen align=left></iframe><br><br>
+    <h3>Lecture Series</h3>
+    <p>We have uploaded the first of our lecture series to our <a
+        href="https://www.youtube.com/channel/UCAhMHA7C3mo0MaASsM4Nweg">YouTube channel</a>! "Interesting Mechanics"<br>
+      is a series hosted by third year Theoretical Physics student, Cas. In this introduction to the<br>
+      world of mechanics our current auditor gives a thorough, comprehensible and engaging introduction<br>
+      to the maths behind some of the different areas of this topic. This is a great way to learn<br>
+      mechanics from scratch or to better understand a certain section you may be struggling with.<br><br>
+      We also have two lectures, given by 3rd year Theoretical Physics student<br>Alexander Farren, on the
+      basics of Einstein Summation Convention.</p>
+  </div>
+
+  <br><br>
+  <hr><br>
+
+  <div id='opps' class="container-fluid text-center">
+    <br><br>
+    <h2>Opportunities</h2>
+    <br><br>
+    <h4>Internships</h4>
+    <div class="row">
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-off"></span>
+        <h4><a href="https://www.maths.tcd.ie/~ksoodha/internship/">Hamilton</a></h4>
+        <p>The Hamilton scholarship is held in Trinity, lasting six weeks, and runs between May and June . Projects are
+          open to students taught by Trinity's School of Maths, and may be supervised by staff from other mathematical
+          disciplines. It pays between of €600-€900 depending on group size. Requirements for application include a
+          project proposal. Last year's application deadline was February 10th.</p>
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-heart"></span>
+        <h4><a href="https://www.tcd.ie/Careers/students/awards/laidlaw/">Laidlaw</a></h4>
+        <p>Laidlaw is a programme that runs over 18 months and includes six weeks of research in summer one and six
+          weeks of leadership volunteer work in summer two. Stipend of up to €10,000. A supervisor, research proposal
+          and leadership proposal is required for the application which is usually due mid February.</p>
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-lock"></span>
+        <h4><a href="https://seti.berkeley.edu/Internship.html">SETI I-LOFAR</a></h4>
+        <p>This internship takes place in a few locations including Ireland, UK, Italy, and California and can also be
+          done online. It runs from June to August and pays €600 per week. A cover letter, transcript, CV, and reference
+          are needed for the application, the deadline of which is February 1st</p>
+      </div>
+    </div>
+    <br><br>
+    <div class="row">
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-leaf"></span>
+        <h4><a href="https://careers.cern/summer">CERN</a></h4>
+        <p>This is internship is held in CERN, Geneva, Switzerland. It runs for 8-10 weeks each summer and pays €300 per
+          week. Deadline is Wednesday 31st January 2024 11 am</p>
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-certificate"></span>
+        <h4><a href="https://www.dias.ie/summer-studentships/">SURE</a></h4>
+        <p>SURE is held in Trinity and runs for 10 weeks during the summer paying €200 per week. It offers projects in
+          physics, chemistry and, engineering A personal statement is needed for the application which is usually due in
+          early March. </p>
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-wrench"></span>
+        <h4><a href="https://www.tyndall.ie/news/summer-internship-at-tyndall-ipic-nurturing-you-to-the-next-phase-of-your-career/">Tyndall</a></h4>
+        <p>Held in Cork or online, the Tyndall internship from June through to August and pays €250 per week. To apply you will need a CV as well as your preferred choice of project. Deadline is 31st of January 2024.</p>
+      </div>
+    </div>
+    <br><br>
+    <div class="row">
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-leaf"></span>
+        <h4><a href="https://www.dias.ie/summer-studentships/">DIAS</a></h4>
+        <p>Held in Catalonia offering student fellowships in biophysics, and theoretical & experimental optics. Runs from June to August. It pays €600 per week and covers travel expenses. Applications become available in February and October.</p>
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-certificate"></span>
+        <h4><a href="https://leaps.strw.leidenuniv.nl">Leiden/ESA</a></h4>
+        <p>Held in Germany, DESY offers a student programme in photon and particle physics. Requirements include grades, CV and two references. Runs from July to September, pays €400 per week.</p>
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-wrench"></span>
+        <h4><a href="https://leaps.strw.leidenuniv.nl">Astron</a></h4>
+        <p>Unlike many REAs in the USA, the Naughton Fellowship offers a nine week research experience in June which is available to EU students in physics and engineering. Travel and living expenses paid. This year's fellowship deadline was the 15th of December 2023.</p>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <hr><br>
+
+  <div id='committee' class="container-fluid text-center">
+    <br><br>
+    <h2>Committee</h2>
+    <br><br>
+  </div>
+  <br><br><br><br>
+
+  <div class="container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.0224079078403!2d-6.252823122661795!3d53.34285507498395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e90fe120561%3A0x7eef2ab31df0761c!2sSchool%20of%20Mathematics!5e0!3m2!1sen!2sie!4v1708117519614!5m2!1sen!2sie"
+      width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade" align=right></iframe><br><br><br>
+    <p><span class="glyphicon glyphicon-envelope"></span> tpsa.ire@gmail.com</p>
+    <p><span class="glyphicon glyphicon-home"></span> School of Mathematics,
+      17 Westland Row,
+      Trinity College Dublin</p>
+
+
+  </div>
+  <footer class="container-fluid text-center">
+    <a href="https://www.instagram.com/tpsa_ireland/">
+      <img src="img/insta.png" width="20" height="20">
+    </a>
+    <a href="https://www.youtube.com/channel/UCAhMHA7C3mo0MaASsM4Nweg">
+      <img src="img/yt.png" width="30" height="30">
+    </a>
+    <a href="https://twitter.com/tpsa_ireland">
+      <img src="img/x.png" width="30" height="30">
+    </a>
+    <br><br>
+    <a href="#top" title="To Top">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+  </footer>
+
+
+
+
+  <script src="script.js"></script>
+
+</html>
