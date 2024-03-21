@@ -10,6 +10,16 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script>
+    $(window).scroll(function () {
+      $(".slideanim").each(function () {
+        var pos = $(this).offset().top;
+
+        var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+      });
+    });
     // scroll smoothly
     $(document).ready(function () {
       $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
@@ -113,6 +123,46 @@
       height: 70%;
       margin-bottom: 10px;
     }
+
+    .slideanim {
+      visibility: hidden;
+    }
+
+    .slide {
+      /* The name of the animation */
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      /* The duration of the animation */
+      animation-duration: 0.5s;
+      -webkit-animation-duration: 0.5s;
+      /* Make the element visible */
+      visibility: visible;
+    }
+
+    /* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+    @keyframes slide {
+      0% {
+        opacity: 0;
+        transform: translateY(70%);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+    }
+
+    @-webkit-keyframes slide {
+      0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+      }
+
+      100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+      }
+    }
   </style>
 
 </head>
@@ -153,7 +203,7 @@
 
   <div id='home' class='container text-center'><br><br><br><br>
 
-    <img class="img-rounded" src="https://pbs.twimg.com/media/Fvszj6rWAAUpdv1?format=jpg&name=large" width=500
+    <img class="img-rounded slideanim" src="https://pbs.twimg.com/media/Fvszj6rWAAUpdv1?format=jpg&name=large" width=500
       height=400 align=right>
     <h3 class="light-blue-text ">Vision</h3>
     <br>
@@ -165,7 +215,7 @@
   </div>
 
   <div id='home' class='container text-center'>
-    <img class="img-rounded" src="img/tpsaImg4.webp" width=400 height=350 align=left><br><br>
+    <img class="img-rounded slideanim" src="img/tpsaImg4.webp" width=400 height=350 align=left><br><br>
 
     <h3 class="light-blue-text ">History</h3><br>
     <p>TPSA was founded by Michael Mitchell along with a number of other students in 2019.<br>
@@ -188,7 +238,7 @@
       to build lasting friendships. Everyone is welcome, you don't have to be a TP student!</p>
   </div>
   <div id='home' class='container text-center'><br><br>
-    <img class="img-rounded" src="https://pbs.twimg.com/media/FwQjYw5agAcy0vV.jpg" width=400 height=250 align=left>
+    <img class="img-rounded slideanim" src="https://pbs.twimg.com/media/FwQjYw5agAcy0vV.jpg" width=400 height=250 align=left>
     <h3 class="light-blue-text ">Outreach</h3><br>
     <p>Bringing our love for maths and physics to younger students, as well as those outside the field, in an attempt
       to<br>inspire, motivate and excite has always been a priority at TPSA. We believe in the importance of
@@ -206,7 +256,7 @@
 
   <div id='projects' class='container text-center'>
     <br><br>
-    <img class="img-rounded" src="img/tpsaImg1.webp" width=500 height=400 align=right><br><br><br><br>
+    <img class="img-rounded slideanim" src="img/tpsaImg1.webp" width=500 height=400 align=right><br><br><br><br>
     <h3 class="light-blue-text">Outreach</h3>
     <p>Our recent outreach events include a painting and particle physics seminar during<br>
       Trinity Arts Festival, a careers fair collaboration with Mathsoc and Physoc, and a<br>
@@ -216,8 +266,8 @@
   </div>
   <div id='projects' class='container text-center'>
     <br><br>
-    <img class="img-rounded" src="img/tpsaImg2.webp" width=500 height=400 align=left><br><br><br><br>
-    <h3 class="light-blue-text ">Our hand in Ireland's efforts to join CERN</h3>
+    <img class="img-rounded slideanim" src="img/tpsaImg2.webp" width=500 height=400 align=left><br><br><br><br>
+    <h3 class="light-blue-text">Our hand in Ireland's efforts to join CERN</h3>
     <p>Unfortunately, for many years Ireland has been one of the very few European countries to<br>
       withhold from joining the European Organisation for Nuclear Research. We have been quite<br>
       heavily involved in Ireland's most recent move towards membership by meeting with several<br>
@@ -227,7 +277,7 @@
   </div>
   <div id='projects' class='container text-center'>
     <br><br>
-    <img class="img-rounded" src="img/tpsaImg3.webp" width=500 height=400 align=right><br><br><br><br>
+    <img class="img-rounded slideanim" src="img/tpsaImg3.webp" width=500 height=400 align=right><br><br><br><br>
     <h3 class="light-blue-text">PLANCKS</h3>
     <p>The Physics League Across Numerous Countries for Kick-ass Students (yes, that's really what<br>
       it's called), is a three-day exam-based physics competition between colleges from all overthe<br>
@@ -337,12 +387,13 @@
   <br><br>
   <hr><br>
 
-  <div id='committee' class="container-fluid text-center">
+  <div id='committee' class="container-fluid text-center slideanim">
     <br><br>
     <h2 class="dark-blue-text">Committee</h2>
-    <h4 class="light-blue-text">An AGM is held at the end of each academic year at which the society votes in a new committee.<br>
+    <h4 class="light-blue-text">An AGM is held at the end of each academic year at which the society votes in a new
+      committee.<br>
       We currently have fourteen roles, as can be seen below.</h4>
-      <br><br>
+    <br><br>
     <div class="row text-center">
       <div class="col-sm-4">
         <div class="thumbnail">
@@ -432,40 +483,40 @@
       </div>
     </div>
     <br><br><br><br>
-    </div>
+  </div>
 
-    <div class="container">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.0224079078403!2d-6.252823122661795!3d53.34285507498395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e90fe120561%3A0x7eef2ab31df0761c!2sSchool%20of%20Mathematics!5e0!3m2!1sen!2sie!4v1708117519614!5m2!1sen!2sie"
-        width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade" align=right></iframe><br><br><br>
-      <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:tpsa.ire@gmail.com">tpsa.ire@gmail.com</a>
-      </p>
-      <p><span class="glyphicon glyphicon-home"></span> School of Mathematics,
-        17 Westland Row,
-        Trinity College Dublin</p>
-
-
-    </div>
-    <footer class="container-fluid text-center">
-      <a href="https://www.instagram.com/tpsa_ireland/">
-        <img src="img/insta.png" width="20" height="20">
-      </a>
-      <a href="https://www.youtube.com/channel/UCAhMHA7C3mo0MaASsM4Nweg">
-        <img src="img/yt.png" width="30" height="30">
-      </a>
-      <a href="https://twitter.com/tpsa_ireland">
-        <img src="img/x.png" width="30" height="30">
-      </a>
-      <br><br>
-      <a href="#top" title="To Top">
-        <span class="glyphicon glyphicon-chevron-up"></span>
-      </a>
-    </footer>
+  <div class="container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.0224079078403!2d-6.252823122661795!3d53.34285507498395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e90fe120561%3A0x7eef2ab31df0761c!2sSchool%20of%20Mathematics!5e0!3m2!1sen!2sie!4v1708117519614!5m2!1sen!2sie"
+      width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade" align=right></iframe><br><br><br>
+    <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:tpsa.ire@gmail.com">tpsa.ire@gmail.com</a>
+    </p>
+    <p><span class="glyphicon glyphicon-home"></span> School of Mathematics,
+      17 Westland Row,
+      Trinity College Dublin</p>
 
 
+  </div>
+  <footer class="container-fluid text-center">
+    <a href="https://www.instagram.com/tpsa_ireland/">
+      <img src="img/insta.png" width="20" height="20">
+    </a>
+    <a href="https://www.youtube.com/channel/UCAhMHA7C3mo0MaASsM4Nweg">
+      <img src="img/yt.png" width="30" height="30">
+    </a>
+    <a href="https://twitter.com/tpsa_ireland">
+      <img src="img/x.png" width="30" height="30">
+    </a>
+    <br><br>
+    <a href="#top" title="To Top">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+  </footer>
 
 
-    <script src="script.js"></script>
+
+
+  <script src="script.js"></script>
 
 </html>
