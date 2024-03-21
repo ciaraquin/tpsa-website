@@ -9,6 +9,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script>
+    // scroll smoothly
     $(document).ready(function () {
       $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
         if (this.hash !== "") {
@@ -25,10 +26,11 @@
     })
   </script>
   <style>
+    /* navbar */
     .navbar {
       margin-bottom: 0;
-      background: linear-gradient(rgb(68, 89, 166), rgba(73, 91, 159, 0.402));
-      /* background-color: #445aa6; */
+      /* background: linear-gradient(rgb(68, 89, 166), rgb(91, 104, 152)); */
+      background-color: #445aa6;
       z-index: 9999;
       border: 0;
       border-radius: 0;
@@ -45,8 +47,12 @@
       background-color: #fff !important;
     }
 
-    .blue-text {
+    /* change colour of headdings */
+    .dark-blue-text {
       color: #445aa6;
+    }
+    .light-blue-text {
+      color: #6a98b9;
     }
 
     .navbar-default .navbar-toggle {
@@ -135,9 +141,9 @@
     
     <img class="img-rounded" src="https://pbs.twimg.com/media/Fvszj6rWAAUpdv1?format=jpg&name=large" width=500
       height=400 align=right>
-    <h3 class="black-text ">Vision</h3>
+    <h3 class="light-blue-text ">Vision</h3>
     <br>
-    <p><b>Knowledge shared is knowledge squared</b><br>
+    <p class="light-blue-text"><b>Knowledge shared is knowledge squared</b><br>
     <p>Our goal is to cultivate the interest students have in maths and physics, among other topics, into a
       lifelongpassion for learning about and bettering our understanding of the world we live in. From weekly seminars
       to talksgiven by experts in the subject, young minds are inspired and motivated to pursue a stimulating and
@@ -147,7 +153,7 @@
   <div id='home' class='container text-center'>
     <img class="img-rounded" src="img/tpsaImg4.webp" width=400 height=350 align=left><br><br>
     
-    <h3 class="black-text ">      History</h3><br>
+    <h3 class="light-blue-text ">History</h3><br>
     <p>TPSA was founded by Michael Mitchell along with a number of other students in 2019.<br>
       While studying Theoretical Physics in TCD, these high-fliers felt there was a gap in<br>
       their overall development as up and coming professionals. They created a space where<br>
@@ -158,7 +164,7 @@
   <div id='home' class='container text-center'><br><br>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.0064310235216!2d-6.253234522661795!3d53.34314107496249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e90ff2c9f6d%3A0x4d8738ad2983146b!2sHamilton%20Building!5e0!3m2!1sen!2sie!4v1708114767985!5m2!1sen!2sie" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" align=right></iframe>
-    <h3 class="black-text ">Weekly Seminars</h3><br>
+    <h3 class="light-blue-text ">Weekly Seminars</h3><br>
     
     <p>We hold seminars every Tuesday evening from 6pm-8pm in the Synge and the Salmon, <a
         href="https://maps.app.goo.gl/Nt4xTmMxbq4FbdCJ8">Hamilton Building, TCD</a>. <br>The aim here is give
@@ -167,7 +173,7 @@
   </div>
   <div id='home' class='container text-center'><br><br>
     <img class="img-rounded" src="https://pbs.twimg.com/media/FwQjYw5agAcy0vV.jpg" width=400 height=250 align=left>
-    <h3 class="black-text ">Outreach</h3><br>
+    <h3 class="light-blue-text ">Outreach</h3><br>
     <p>Bringing our love for maths and physics to younger students, as well as those outside the field, in an attempt
       to<br>inspire, motivate and excite has always been a priority at TPSA. We believe in the importance of
       leadership<br>and in our responsibility to guide future generations of Ireland so that they can discover the right
@@ -177,7 +183,7 @@
   <hr><br>
 
   <!-- CURRENT PROJECTS -->
-  <div id='projects' class='text-center'><br><br>
+  <div id='projects' class='text-center dark-blue-text'><br><br>
     <h2>Current Projects</h2>
     <p>A little on what we've been up to recently</p>
   </div>
@@ -185,7 +191,7 @@
   <div id='projects' class='container text-center'>
     <br><br>
     <img class="img-rounded" src="img/tpsaImg1.webp" width=500 height=400 align=right><br><br><br><br>
-    <h3 class="black-text ">Outreach</h3>
+    <h3 class="light-blue-text">Outreach</h3>
     <p>Our recent outreach events include a painting and particle physics seminar during<br>
       Trinity Arts Festival, a careers fair collaboration with Mathsoc and Physoc, and a<br>
       lecture given to some of the students of CTYI. We are hoping to take part in Mathsfest<br>
@@ -195,7 +201,7 @@
   <div id='projects' class='container text-center'>
     <br><br>
     <img class="img-rounded" src="img/tpsaImg2.webp" width=500 height=400 align=left><br><br><br><br>
-    <h3 class="black-text ">Our hand in Ireland's efforts to join CERN</h3>
+    <h3 class="light-blue-text ">Our hand in Ireland's efforts to join CERN</h3>
     <p>Unfortunately, for many years Ireland has been one of the very few European countries to<br>
       withhold from joining the European Organisation for Nuclear Research. We have been quite<br>
       heavily involved in Ireland's most recent move towards membership by meeting with several<br>
@@ -206,7 +212,7 @@
   <div id='projects' class='container text-center'>
     <br><br>
     <img class="img-rounded" src="img/tpsaImg3.webp" width=500 height=400 align=right><br><br><br><br>
-    <h3>PLANCKS</h3>
+    <h3 class="light-blue-text">PLANCKS</h3>
     <p>The Physics League Across Numerous Countries for Kick-ass Students (yes, that's really what<br>
       it's called), is a three-day exam-based physics competition between colleges from all overthe<br>
       world. We sent our first team of three students to the preliminaries in Liverpool in February<br>
@@ -221,7 +227,7 @@
       title="YouTube video player" frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen align=left></iframe><br><br>
-    <h3>Lecture Series</h3>
+    <h3 class="blue-text">Lecture Series</h3>
     <p>We have uploaded the first of our lecture series to our <a
         href="https://www.youtube.com/channel/UCAhMHA7C3mo0MaASsM4Nweg">YouTube channel</a>! "Interesting Mechanics"<br>
       is a series hosted by third year Theoretical Physics student, Cas. In this introduction to the<br>
@@ -237,9 +243,9 @@
 
   <div id='opps' class="container-fluid text-center">
     <br><br>
-    <h2>Opportunities</h2>
+    <h2 class="dark-blue-text">Opportunities</h2>
     <br><br>
-    <h4>Internships</h4>
+    <h4 class="light-blue-text">Internships</h4>
     <div class="row">
       <div class="col-sm-4">
         <span class="glyphicon glyphicon-off"></span>
@@ -309,7 +315,7 @@
 
   <div id='committee' class="container-fluid text-center">
     <br><br>
-    <h2>Committee</h2>
+    <h2 class="dark-blue-text">Committee</h2>
     <br><br>
   </div>
   <br><br><br><br>
