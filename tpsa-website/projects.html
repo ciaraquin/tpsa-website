@@ -46,6 +46,9 @@
             z-index: 9999;
             border: 0;
             border-radius: 0;
+            font-size: 12px !important;
+            line-height: 1.42857143 !important;
+            letter-spacing: 4px;
         }
 
         .navbar li a,
@@ -180,29 +183,29 @@
 <body id="top" data-spy="scroll" data-target=".navbar" data-offset="60">
 
     <!-- ========NAVIGATION BAR========= -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">
-                    <img src="img/logo.png" width="35" height="35">
-                </a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-left">
-                    <li><a href="./index.html">HOME</a></li>
-                    <li><a href="./projects.html">CURRENT PROJECTS</a></li>
-                    <li><a href="./opportunities.html">OPPORTUNITIES</a></li>
-                    <li><a href="./committee.html">COMMITTEE</a></li>
-                    <!-- to add another section copy format of above -->
-                </ul>
-            </div>
+    <nav class="navbar navbar-default navbar-expand-lg navbar-fixed-top ">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- <a class="navbar-brand" href="index.html">
+              <img src="img/logo.png" width="50" height="50">
+            </a> -->
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="./index.html">HOME</a></li>
+              <li class="active"><a href="./projects.html">CURRENT PROJECTS</a></li>
+              <li><a href="./opportunities.html">OPPORTUNITIES</a></li>
+              <li><a href="./committee.html">COMMITTEE</a></li>
+              <!-- to add another section copy format of above -->
+            </ul>
+          </div>
         </div>
-    </nav>
+      </nav>
 
 
 

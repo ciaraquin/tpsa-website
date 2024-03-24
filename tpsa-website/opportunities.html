@@ -46,6 +46,9 @@
             z-index: 9999;
             border: 0;
             border-radius: 0;
+            font-size: 12px !important;
+            line-height: 1.42857143 !important;
+            letter-spacing: 4px;
         }
 
         .navbar li a,
@@ -180,30 +183,29 @@
 <body id="top" data-spy="scroll" data-target=".navbar" data-offset="60">
 
     <!-- ========NAVIGATION BAR========= -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
+    <nav class="navbar navbar-default navbar-expand-lg navbar-fixed-top ">
+        <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">
-                    <img src="img/logo.png" width="35" height="35">
-                </a>
+                <!-- <a class="navbar-brand" href="index.html">
+              <img src="img/logo.png" width="50" height="50">
+            </a> -->
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-left">
+                <ul class="nav navbar-nav">
                     <li><a href="./index.html">HOME</a></li>
                     <li><a href="./projects.html">CURRENT PROJECTS</a></li>
-                    <li><a href="./opportunities.html">OPPORTUNITIES</a></li>
+                    <li class="active"><a href="./opportunities.html">OPPORTUNITIES</a></li>
                     <li><a href="./committee.html">COMMITTEE</a></li>
                     <!-- to add another section copy format of above -->
                 </ul>
             </div>
         </div>
     </nav>
-
 
     <!-- ================OPPORTUNITIES================ -->
     <div id='opps' class="container-fluid text-center">
@@ -214,39 +216,65 @@
 
         <div class="row">
             <div class="col-sm-4">
-                <span class="glyphicon glyphicon-off"></span>
-                <h4><a href="https://www.maths.tcd.ie/~ksoodha/internship/" target="_blank"
-                        rel="noopener noreferrer">Hamilton</a></h4>
-                <p>The Hamilton scholarship is held in Trinity, lasting six weeks, and runs between May and June .
-                    Projects
-                    are
-                    open to students taught by Trinity's School of Maths, and may be supervised by staff from other
-                    mathematical
-                    disciplines. It pays between of €600-€900 depending on group size. Requirements for application
-                    include
-                    a
-                    project proposal. Last year's application deadline was February 10th.</p>
+                <span class="glyphicon glyphicon-off"></span><br><br>
+
+
+                <button data-toggle="collapse" data-target="#demo">Hamilton</button>
+
+                <div id="demo" class="collapse">
+                    The Hamilton scholarship is held in Trinity, lasting six weeks, and runs between May and
+                    June . Projects are open to students taught by Trinity's School of Maths, and may be supervised
+                    by staff
+                    from other mathematical disciplines. It pays between of €600-€900 depending on group size.
+                    Requirements for
+                    application include a project proposal. Last year's application deadline was February 10th.
+                </div>
+
+                <!-- <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                    Hamilton
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordion">
+                            <div class="card-body">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
             </div>
             <div class="col-sm-4">
-                <span class="glyphicon glyphicon-heart"></span>
-                <h4><a href="https://www.tcd.ie/Careers/students/awards/laidlaw/" target="_blank"
-                        rel="noopener noreferrer">Laidlaw</a></h4>
-                <p>Laidlaw is a programme that runs over 18 months and includes six weeks of research in summer one and
-                    six
-                    weeks of leadership volunteer work in summer two. Stipend of up to €10,000. A supervisor, research
-                    proposal
-                    and leadership proposal is required for the application which is usually due mid February.</p>
+                <span class="glyphicon glyphicon-heart"></span><br><br>
+
+
+                <button data-toggle="collapse" data-target="#laidlaw">Laidlaw</button>
+
+                <div id="laidlaw" class="collapse">
+                    Laidlaw is a programme that runs over 18 months and includes six weeks of research in summer one and
+                    six weeks of leadership volunteer work in summer two. Stipend of up to €10,000. A supervisor,
+                    research
+                    proposal and leadership proposal is required for the application which is usually due mid February.
+                </div>
             </div>
             <div class="col-sm-4">
-                <span class="glyphicon glyphicon-lock"></span>
-                <h4><a href="https://seti.berkeley.edu/Internship.html" target="_blank" rel="noopener noreferrer">SETI
-                        I-LOFAR</a></h4>
-                <p>This internship takes place in a few locations including Ireland, UK, Italy, and California and can
-                    also
-                    be
-                    done online. It runs from June to August and pays €600 per week. A cover letter, transcript, CV, and
-                    reference
-                    are needed for the application, the deadline of which is February 1st</p>
+                <span class="glyphicon glyphicon-lock"></span><br><br>
+
+                <button data-toggle="collapse" data-target="#seti">SETI I-LOFAR</button>
+
+                <div id="seti" class="collapse">
+                    <p>This internship takes place in a few locations including Ireland, UK, Italy, and California and
+                        can also be done online. It runs from June to August and pays €600 per week. A cover letter,
+                        transcript, CV, and reference are needed for the application, the deadline of which is February 1st
+                    </p>
+                </div>
+
             </div>
         </div>
         <br><br>
@@ -254,7 +282,8 @@
             <div class="col-sm-4">
                 <span class="glyphicon glyphicon-leaf"></span>
                 <h4><a href="https://careers.cern/summer" target="_blank" rel="noopener noreferrer">CERN</a></h4>
-                <p>This is internship is held in CERN, Geneva, Switzerland. It runs for 8-10 weeks each summer and pays
+                <p>This is internship is held in CERN, Geneva, Switzerland. It runs for 8-10 weeks each summer and
+                    pays
                     €300
                     per
                     week. Deadline is Wednesday 31st January 2024 11 am</p>
@@ -277,9 +306,11 @@
                 <h4><a href="https://www.tyndall.ie/news/summer-internship-at-tyndall-ipic-nurturing-you-to-the-next-phase-of-your-career/"
                         target="_blank" rel="noopener noreferrer">Tyndall</a>
                 </h4>
-                <p>Held in Cork or online, the Tyndall internship from June through to August and pays €250 per week. To
+                <p>Held in Cork or online, the Tyndall internship from June through to August and pays €250 per
+                    week. To
                     apply
-                    you will need a CV as well as your preferred choice of project. Deadline is 31st of January 2024.
+                    you will need a CV as well as your preferred choice of project. Deadline is 31st of January
+                    2024.
                 </p>
             </div>
         </div>
@@ -290,11 +321,14 @@
                 <h4><a href="https://www.dias.ie/summer-studentships/" target="_blank"
                         rel="noopener noreferrer">DIAS</a>
                 </h4>
-                <p>Held in Catalonia offering student fellowships in biophysics, and theoretical & experimental optics.
-                    Runs
-                    from June to August. It pays €600 per week and covers travel expenses. Applications become available
-                    in
-                    February and October.</p>
+                <p>Held in Dublin, DIAS offers studentships in Theoretical Physics, Astrophysics, and Geophysics.
+                    Starting
+                    in early June, and paying around €375 a week. A CV, a statement of your motivation to pursue the
+                    associated
+                    career, and a statement from a department head assuring your degree grade will meet grade
+                    requirements.
+                    Last year's deadline for application was 4th April 2023.
+                </p>
             </div>
             <div class="col-sm-4">
                 <span class="glyphicon glyphicon-certificate"></span>
@@ -302,7 +336,8 @@
                 </h4>
                 <p>Leiden is an astrophysics programme that runs in the Netherlands from June 10th to August 16th.
                     Accommodation, travel,
-                    and €197 are provided. A cover letter, transcript CV and reference are required for the application
+                    and €197 are provided. A cover letter, transcript CV and reference are required for the
+                    application
                     which was
                     last due 1st
                     February 2024.
@@ -330,7 +365,8 @@
                 <h4><a href="https://www.icfo.eu/studies/internships/fellowships/research_fellowships/" target="_blank"
                         rel="noopener noreferrer">ICFO</a></h4>
                 <p>
-                    Held in Catalonia offering student fellowships in biophysics, and theoretical & experimental optics.
+                    Held in Catalonia offering student fellowships in biophysics, and theoretical & experimental
+                    optics.
                     Runs from June to August. It pays €600 per week and covers travel expenses. Applications become
                     available
                     in February and October.
@@ -338,18 +374,23 @@
             </div>
             <div class="col-sm-4">
                 <span class="glyphicon glyphicon-certificate"></span>
-                <h4><a href="https://summerstudents.desy.de/" target="_blank" rel="noopener noreferrer">DESY</a></h4>
-                <p>Held in Germany, DESY offers a student programme in photon and particle physics. Requirements include
+                <h4><a href="https://summerstudents.desy.de/" target="_blank" rel="noopener noreferrer">DESY</a>
+                </h4>
+                <p>Held in Germany, DESY offers a student programme in photon and particle physics. Requirements
+                    include
                     grades, CV and two references. Runs from July to September, pays €400 per week.
                 </p>
             </div>
             <div class="col-sm-4">
                 <span class="glyphicon glyphicon-wrench"></span>
-                <h4><a href="https://naughton.nd.edu/" target="_blank" rel="noopener noreferrer">Naughton Fellowship</a>
+                <h4><a href="https://naughton.nd.edu/" target="_blank" rel="noopener noreferrer">Naughton
+                        Fellowship</a>
                 </h4>
-                <p>Unlike many REAs in the USA, the Naughton Fellowship offers a nine week research experience in June
+                <p>Unlike many REAs in the USA, the Naughton Fellowship offers a nine week research experience in
+                    June
                     which
-                    is available to EU students in physics and engineering. Travel and living expenses paid. This year's
+                    is available to EU students in physics and engineering. Travel and living expenses paid. This
+                    year's
                     fellowship
                     deadline was the 15th of December 2023.
                 </p>

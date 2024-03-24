@@ -40,7 +40,7 @@
   <style>
     /* navbar */
     .navbar {
-      margin: 0 auto;
+      margin: auto;
       margin-bottom: 0;
       /* background-color: #445aa6;
       justify-content: center; */
@@ -51,17 +51,21 @@
       font-size: 12px !important;
       line-height: 1.42857143 !important;
       letter-spacing: 4px;
+      
     }
 
     .navbar li a,
     .navbar .navbar-brand {
       /* color: #fff !important; */
       color: #445aa6 !important;
+      
     }
 
     .navbar-nav li a:hover,
     .navbar-nav li.active a {
-
+      margin: auto;
+      display: flex;
+      justify-content: center;
       /* color: #445aa6 !important; */
       color: #ffffff !important;
       /* background-color: #fff !important; */
@@ -186,8 +190,8 @@
 <body id="top" data-spy="scroll" data-target=".navbar" data-offset="60">
 
   <!-- ========NAVIGATION BAR========= -->
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
+  <nav class="navbar navbar-default navbar-expand-lg navbar-fixed-top ">
+    <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <span class="icon-bar"></span>
@@ -199,7 +203,7 @@
         </a> -->
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-left">
+        <ul class="nav navbar-nav">
           <li class="active"><a href="./index.html">HOME</a></li>
           <li><a href="./projects.html">CURRENT PROJECTS</a></li>
           <li><a href="./opportunities.html">OPPORTUNITIES</a></li>
