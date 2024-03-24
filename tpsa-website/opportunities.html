@@ -95,6 +95,22 @@
             color: #445aa6;
         }
 
+        /* button styling */
+
+        .button {
+            transition-duration: 0.4s;
+            border: none;
+            color: #445aa6;
+        }
+
+        .button:hover {
+            background-color: #445aa6;
+            /* Green */
+            color: white;
+        }
+
+
+
         /* .carousel-control.right,
     .carousel-control.left {
       background-image: none;
@@ -191,9 +207,6 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <!-- <a class="navbar-brand" href="index.html">
-              <img src="img/logo.png" width="50" height="50">
-            </a> -->
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
@@ -219,59 +232,48 @@
                 <span class="glyphicon glyphicon-off"></span><br><br>
 
 
-                <button data-toggle="collapse" data-target="#demo">Hamilton</button>
+                <button class="button" data-toggle="collapse" data-target="#Hamilton">Hamilton</button>
 
-                <div id="demo" class="collapse">
-                    The Hamilton scholarship is held in Trinity, lasting six weeks, and runs between May and
-                    June . Projects are open to students taught by Trinity's School of Maths, and may be supervised
-                    by staff
-                    from other mathematical disciplines. It pays between of €600-€900 depending on group size.
-                    Requirements for
-                    application include a project proposal. Last year's application deadline was February 10th.
+                <div id="Hamilton" class="collapse">
+                    <p>
+                        <br>
+                        The <a href="https://www.maths.tcd.ie/~ksoodha/internship/">Hamilton scholarship</a> is held in Trinity, lasting six weeks, and runs between May and
+                        June . Projects are open to students taught by Trinity's School of Maths, and may be supervised
+                        by staff from other mathematical disciplines. It pays between of €600-€900 depending on group
+                        size.
+                        Requirements for application include a project proposal. Last year's application deadline was
+                        February 10th.
+                    </p>
                 </div>
-
-                <!-- <div id="accordion">
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
-                                    aria-expanded="true" aria-controls="collapseOne">
-                                    Hamilton
-                                </button>
-                            </h5>
-                        </div>
-
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                            data-parent="#accordion">
-                            <div class="card-body">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
             </div>
             <div class="col-sm-4">
                 <span class="glyphicon glyphicon-heart"></span><br><br>
-
-
-                <button data-toggle="collapse" data-target="#laidlaw">Laidlaw</button>
+                <button class="button" data-toggle="collapse" data-target="#laidlaw">Laidlaw</button>
 
                 <div id="laidlaw" class="collapse">
-                    Laidlaw is a programme that runs over 18 months and includes six weeks of research in summer one and
-                    six weeks of leadership volunteer work in summer two. Stipend of up to €10,000. A supervisor,
-                    research
-                    proposal and leadership proposal is required for the application which is usually due mid February.
+                    <p>
+                        <br>
+                        <a href="https://www.tcd.ie/Careers/students/awards/laidlaw/">Laidlaw</a> is a programme that runs over 18 months and includes six weeks of research in summer one
+                        and six weeks of leadership volunteer work in summer two. Stipend of up to €10,000. A
+                        supervisor,
+                        research proposal and leadership proposal is required for the application which is usually due
+                        mid
+                        February.
+                    </p>
                 </div>
             </div>
             <div class="col-sm-4">
                 <span class="glyphicon glyphicon-lock"></span><br><br>
 
-                <button data-toggle="collapse" data-target="#seti">SETI I-LOFAR</button>
+                <button class="button" data-toggle="collapse" data-target="#seti">SETI I-LOFAR</button>
 
                 <div id="seti" class="collapse">
-                    <p>This internship takes place in a few locations including Ireland, UK, Italy, and California and
+                    <p>
+                        <br>
+                        <a href="https://seti.berkeley.edu/Internship.html">This internship</a> takes place in a few locations including Ireland, UK, Italy, and California and
                         can also be done online. It runs from June to August and pays €600 per week. A cover letter,
-                        transcript, CV, and reference are needed for the application, the deadline of which is February 1st
+                        transcript, CV, and reference are needed for the application, the deadline of which is February
+                        1st
                     </p>
                 </div>
 
@@ -280,120 +282,128 @@
         <br><br>
         <div class="row">
             <div class="col-sm-4">
-                <span class="glyphicon glyphicon-leaf"></span>
-                <h4><a href="https://careers.cern/summer" target="_blank" rel="noopener noreferrer">CERN</a></h4>
-                <p>This is internship is held in CERN, Geneva, Switzerland. It runs for 8-10 weeks each summer and
-                    pays
-                    €300
-                    per
-                    week. Deadline is Wednesday 31st January 2024 11 am</p>
+                <span class="glyphicon glyphicon-leaf"></span><br><br>
+                <button class="button" data-toggle="collapse" data-target="#CERN">CERN</button>
+                <div id="CERN" class="collapse">
+                    <p>
+                        <br>
+                        <a href="https://careers.cern/summer">This internship</a> is held in CERN, Geneva, Switzerland. It runs for 8-10 weeks each summer and
+                        pays €300 per week. Deadline is Wednesday 31st January 2024 11 am.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-certificate"></span><br><br>
+                <button class="button" data-toggle="collapse" data-target="#SURE">SURE</button>
+                <div id="SURE" class="collapse">
+                    <p>
+                        <br>
+                        <a href="https://www.tcd.ie/news_events/articles/tcd-summer-undergraduate-research-experience/">SURE</a> is held in Trinity and runs for 10 weeks during the summer paying €200 per week. It offers
+                        projects in physics, chemistry and, engineering A personal statement is needed for the
+                        application
+                        which is
+                        usually due in early March.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-wrench"></span><br><br>
+                <button class="button" data-toggle="collapse" data-target="#Tyndall">Tyndall</button>
+                <div id="Tyndall" class="collapse">
+                    <p>
+                        <br>
+                        Held in Cork or online, the <a href="https://www.tyndall.ie/internships-and-co-op-placements/">Tyndall internship</a> from June through to August and pays €250 per
+                        week. To apply you will need a CV as well as your preferred choice of project. Deadline is 31st
+                        of January
+                        2024.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-leaf"></span><br><br>
+                <button class="button" data-toggle="collapse" data-target="#DIAS">DIAS</button>
+                <div id="DIAS" class="collapse">
+                    <p>
+                        <br>
+                        Held in Dublin, <a href="https://www.dias.ie/summer-studentships/">DIAS</a> offers studentships in Theoretical Physics, Astrophysics, and Geophysics.
+                        Starting in early June, and paying around €375 a week. A CV, a statement of your motivation to
+                        pursue the
+                        associated career, and a statement from a department head assuring your degree grade will meet
+                        grade
+                        requirements. Last year's deadline for application was 4th April 2023.
+                    </p>
+                </div>
             </div>
             <div class="col-sm-4">
-                <span class="glyphicon glyphicon-certificate"></span>
-                <h4><a href="https://www.tcd.ie/news_events/articles/tcd-summer-undergraduate-research-experience/"
-                        target="_blank" rel="noopener noreferrer">SURE</a></h4>
-                <p>SURE is held in Trinity and runs for 10 weeks during the summer paying €200 per week. It offers
-                    projects
-                    in
-                    physics, chemistry and, engineering A personal statement is needed for the application which is
-                    usually
-                    due
-                    in
-                    early March. </p>
+                <span class="glyphicon glyphicon-certificate"></span><br><br>
+                <button class="button" data-toggle="collapse" data-target="#Leiden">Leiden/ESA</button>
+                <div id="Leiden" class="collapse">
+                    <p>
+                        <br>
+                        <a href="https://leaps.strw.leidenuniv.nl/">Leiden</a> is an astrophysics programme that runs in the Netherlands from June 10th to August 16th.
+                        Accommodation, travel, and €197 are provided. A cover letter, transcript CV and reference are
+                        required for the
+                        application which was last due 1st February 2024.
+                    </p>
+                </div>
             </div>
             <div class="col-sm-4">
-                <span class="glyphicon glyphicon-wrench"></span>
-                <h4><a href="https://www.tyndall.ie/news/summer-internship-at-tyndall-ipic-nurturing-you-to-the-next-phase-of-your-career/"
-                        target="_blank" rel="noopener noreferrer">Tyndall</a>
-                </h4>
-                <p>Held in Cork or online, the Tyndall internship from June through to August and pays €250 per
-                    week. To
-                    apply
-                    you will need a CV as well as your preferred choice of project. Deadline is 31st of January
-                    2024.
-                </p>
+                <span class="glyphicon glyphicon-certificate"></span><br><br>
+                <button class="button" data-toggle="collapse" data-target="#Astron">Astron</button>
+                <div id="Astron" class="collapse">
+                    <p>
+                        <br>
+                        <a href="https://www.astron.nl/summerstudent/">Astron</a> is held in The Netherlands, with projects offered in astrophysics, astronomy, and engineering. The
+                        requirements include two references and a CV. Begins in early June and runs for 10-12 weeks.
+                        Accommodation and travel are provided alongside €190 per week. The application
+                        deadline is February 1st 2024.
+                    </p>
+                </div>
             </div>
         </div>
         <br><br>
         <div class="row">
             <div class="col-sm-4">
-                <span class="glyphicon glyphicon-leaf"></span>
-                <h4><a href="https://www.dias.ie/summer-studentships/" target="_blank"
-                        rel="noopener noreferrer">DIAS</a>
-                </h4>
-                <p>Held in Dublin, DIAS offers studentships in Theoretical Physics, Astrophysics, and Geophysics.
-                    Starting
-                    in early June, and paying around €375 a week. A CV, a statement of your motivation to pursue the
-                    associated
-                    career, and a statement from a department head assuring your degree grade will meet grade
-                    requirements.
-                    Last year's deadline for application was 4th April 2023.
-                </p>
+                <span class="glyphicon glyphicon-wrench"></span><br><br>
+                <button class="button" data-toggle="collapse" data-target="#ICFO">ICFO</button>
+                <div id="ICFO" class="collapse">
+                    <p>
+                        <br>
+                        Held in Catalonia, <a href="https://www.icfo.eu/studies/internships/fellowships/research_fellowships/">ICFO</a> offers student fellowships in biophysics, and theoretical & experimental
+                        optics. Runs from June to August. It pays €600 per week and covers travel expenses.
+                        Applications become available in February and October.
+                    </p>
+                </div>
             </div>
             <div class="col-sm-4">
-                <span class="glyphicon glyphicon-certificate"></span>
-                <h4><a href="https://leaps.strw.leidenuniv.nl" target="_blank" rel="noopener noreferrer">Leiden/ESA</a>
-                </h4>
-                <p>Leiden is an astrophysics programme that runs in the Netherlands from June 10th to August 16th.
-                    Accommodation, travel,
-                    and €197 are provided. A cover letter, transcript CV and reference are required for the
-                    application
-                    which was
-                    last due 1st
-                    February 2024.
-                </p>
+                <span class="glyphicon glyphicon-wrench"></span><br><br>
+                <button class="button" data-toggle="collapse" data-target="#DESY">DESY</button>
+                <div id="DESY" class="collapse">
+                    <p>
+                        <br>
+                        Held in Germany, <a href="https://summerstudents.desy.de/">DESY</a> offers a student programme in photon and particle physics. Requirements
+                        include grades, CV and two references. Runs from July to September, pays €400 per week.
+                    </p>
+                </div>
             </div>
+
             <div class="col-sm-4">
-                <span class="glyphicon glyphicon-wrench"></span>
-                <h4><a href="https://www.astron.nl/summerstudent/" target="_blank" rel="noopener noreferrer">Astron</a>
-                </h4>
-                <p>Held in The Netherlands, with projects offered in astrophysics, astronomy, and engineering. The
-                    requirements
-                    include two references
-                    and a CV. Begins in early June and runs for 10-12 weeks. Accommodation and travel are provided
-                    alongside
-                    €190
-                    per week. The application
-                    deadline is February 1st 2024.
-                </p>
-            </div>
-        </div>
-        <br><br>
-        <div class="row">
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-leaf"></span>
-                <h4><a href="https://www.icfo.eu/studies/internships/fellowships/research_fellowships/" target="_blank"
-                        rel="noopener noreferrer">ICFO</a></h4>
-                <p>
-                    Held in Catalonia offering student fellowships in biophysics, and theoretical & experimental
-                    optics.
-                    Runs from June to August. It pays €600 per week and covers travel expenses. Applications become
-                    available
-                    in February and October.
-                </p>
-            </div>
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-certificate"></span>
-                <h4><a href="https://summerstudents.desy.de/" target="_blank" rel="noopener noreferrer">DESY</a>
-                </h4>
-                <p>Held in Germany, DESY offers a student programme in photon and particle physics. Requirements
-                    include
-                    grades, CV and two references. Runs from July to September, pays €400 per week.
-                </p>
-            </div>
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-wrench"></span>
-                <h4><a href="https://naughton.nd.edu/" target="_blank" rel="noopener noreferrer">Naughton
-                        Fellowship</a>
-                </h4>
-                <p>Unlike many REAs in the USA, the Naughton Fellowship offers a nine week research experience in
-                    June
-                    which
-                    is available to EU students in physics and engineering. Travel and living expenses paid. This
-                    year's
-                    fellowship
-                    deadline was the 15th of December 2023.
-                </p>
+                <span class="glyphicon glyphicon-wrench"></span><br><br>
+                <button class="button" data-toggle="collapse" data-target="#Naughton">Naughton Fellowship</button>
+                <div id="Naughton" class="collapse">
+                    <p>
+                        <br>
+                        Unlike many REAs in the USA, the <a href="https://naughton.nd.edu/">Naughton Fellowship</a> offers a nine week research experience in
+                        June which is available to EU students in physics and engineering. Travel and living expenses
+                        paid. This year's fellowship deadline was the 15th of December 2023.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
