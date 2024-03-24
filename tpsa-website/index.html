@@ -40,11 +40,13 @@
   <style>
     /* navbar */
     .navbar {
+      margin: 0 auto; 
       margin-bottom: 0;
-      /* background-color: #445aa6; */
+      /* background-color: #445aa6;
+      justify-content: center; */
       background-color: #ffffff;
-      z-index: 9999;
-      border: 0;
+      z-index: 1;
+      border: 0; 
       border-radius: 0;
     }
 
@@ -56,6 +58,7 @@
 
     .navbar-nav li a:hover,
     .navbar-nav li.active a {
+      
       /* color: #445aa6 !important; */
       color: #ffffff !important;
       /* background-color: #fff !important; */
@@ -192,9 +195,9 @@
           <img src="img/logo.png" width="50" height="50">
         </a> -->
       </div>
-      <div class="collapse navbar-collapse justify-content-center" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li><a href="./index.html">HOME</a></li>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-left">
+          <li class="active"><a href="./index.html">HOME</a></li>
           <li><a href="./projects.html">CURRENT PROJECTS</a></li>
           <li><a href="./opportunities.html">OPPORTUNITIES</a></li>
           <li><a href="./committee.html">COMMITTEE</a></li>
